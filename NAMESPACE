@@ -1,0 +1,12 @@
+useDynLib(deform, .registration=TRUE)
+importFrom(Rcpp, evalCpp)
+## export all regularly named functions
+## (but allow for private functions whose name starts with a dot).name <- function(...)
+exportPattern("^[[:alpha:]]+")
+importFrom("graphics", "curve", "matlines", "matplot", "par", "lines", "image", "title")
+importFrom("stats", "dist", "optim", "rnorm", "runif", "simulate", "dnorm", "nlm", "pnorm", "sd", "ppoints", "quantile")
+importFrom("utils", "tail")
+importFrom("grDevices", "hcl.colors", "n2mfrow")
+S3method(plot, deform)
+S3method(predict, deform)
+S3method(simulate, deform)

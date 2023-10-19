@@ -1,0 +1,27 @@
+#' Variance-covariance matrix for British Columbia solar radiation data
+#'
+#' @name solar
+#' @docType data
+#' 
+#' @format A \code{list} with three elements, which are:
+#' 
+#' \describe{
+#'   \item{x}{a 12-row 2-column matrix of longitude-latitude coordinates for 12 stations}
+#'   \item{z}{a 12-row 12-column variance-covariance matrix}
+#'   \item{n}{an integer giving the original sample size}
+#' }
+#'
+#' @source 
+#' 
+#' These data were kindly provided by Alexandra Schmidt. They were originally published in 
+#' Hay (1983) and then used in Sampson and Guttorp's (1992) pioneering deformation paper.
+#' 
+#' Hay, J. E. (1983) Solar energy system design: The impact of mesoscale variations in solar 
+#' radiation, Atmosphere-Ocean, 21:2, 138-157, \doi{10.1080/07055900.1983.9649161}
+#'
+#' Sampson, P. D. and Guttorp, P. (1992) Nonparametric Estimation of Nonstationary Spatial
+#' Covariance Structure, Journal of the American Statistical Association, 87:417, 108-119,
+#' \doi{10.1080/01621459.1992.10475181}
+#'
+#' @keywords data
+NULL
